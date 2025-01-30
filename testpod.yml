@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testpod
+  namespace: localstack
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: testpod
+  template:
+    metadata:
+      labels:
+        app: testpod
+    spec:
+      containers:
+        - name: main
+          image: ghcr.io/simonrw/docker-debug:main
+          command: ["sleep", "infinity"]
