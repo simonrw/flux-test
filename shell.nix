@@ -7,6 +7,8 @@ mkShell {
     k9s
     k3d
     fluxcd
+    sops
+    age
   ];
 }
 
