@@ -8,7 +8,5 @@ mkShell {
     k3d
     fluxcd
   ];
-
-  env.KUBECONFIG = "kubceonfig.yml";
 }
 
