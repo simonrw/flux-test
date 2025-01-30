@@ -17,3 +17,10 @@ spec:
         - name: main
           image: ghcr.io/simonrw/docker-debug:main
           command: ["sleep", "infinity"]
+          env:
+            - name: AWS_ACCESS_KEY_ID
+              value: test
+            - name: AWS_SECRET_ACCESS_KEY
+              value: test
+            - name: AWS_DEFAULT_REGION
+              value: us-east-1
