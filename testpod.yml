@@ -24,3 +24,5 @@ spec:
               value: test
             - name: AWS_DEFAULT_REGION
               value: us-east-1
+            - name: AWS_ENDPOINT_URL
+              value: http://localstack:4566
