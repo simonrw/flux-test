@@ -6,6 +6,7 @@ mkShell {
     kubernetes-helm
     k9s
     k3d
+    fluxcd
   ];
 
   env.KUBECONFIG = "kubceonfig.yml";
